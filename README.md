@@ -15,3 +15,15 @@ implementing weight surgery, visualizing embeddings
 4. Calculate diagonal matrix S, the orthogonal projection of the first dimension 
 
 5. Calculate inverse of the unitary matrix U, which reverts back to the original basis 
+
+
+## Running Tensorboard 
+
+To run tensorboard: 
+```
+cd Tensorboard
+
+tensorboard --logdir=<folder_name>
+```
+
+Open the link generated and go to 'Projector' to visualize embeddings. 
