@@ -1,7 +1,22 @@
 # weight_surgery
 implementing weight surgery, visualizing embeddings
 
-## Steps in weight surgery: 
+## Setting up the environment
+
+Create anaconda workspace
+```
+conda create -n weight_surgery python=3.7 -y 
+```
+
+Activate workspace and install dependencies
+```
+conda activate weight_surgery
+
+pip install -r requirements.txt
+```
+
+
+## Steps in weight surgery
 
 1. Find centroids of the 2 classes to be merged 
 
