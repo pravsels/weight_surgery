@@ -1,4 +1,5 @@
 import torch
+import torch.nn.functional as F
 import numpy as np
 import os
 import cv2 as cv
@@ -33,8 +34,14 @@ class DeepFeatures(torch.nn.Module):
 
         self.writer = None
 
-    def generate_embeddings(self, x):
-        return (self.model.embedding(x))
+    def generate_embeddings(self, x, normalize=False):
+
+        embeds = self.model.embedding(x)
+
+        if normalize:
+            embeds = F.normalize(embeds)
+
+        return embeds
 
     def write_embeddings(self, x, outsize=(28, 28)):
         embeds = self.generate_embeddings(x)
