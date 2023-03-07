@@ -39,7 +39,7 @@ class DeepFeatures(torch.nn.Module):
         embeds = self.model.embedding(x)
 
         if normalize:
-            embeds = F.normalize(embeds)
+            embeds = torch.norm(embeds)
 
         return embeds
 

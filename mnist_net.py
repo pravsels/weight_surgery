@@ -18,6 +18,7 @@ class Net(nn.Module):
         self.fc4 = nn.Linear(3, 3)
         self.fc5 = nn.Linear(3, 10)
 
+
     def embedding(self, x):
         x = self.pool(F.relu(self.conv1(x)))
         x = self.pool(F.relu(self.conv2(x)))
@@ -34,6 +35,7 @@ class Net(nn.Module):
 
         return x
 
+
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
         x = self.pool(F.relu(self.conv2(x)))
@@ -47,6 +49,9 @@ class Net(nn.Module):
         x = F.relu(self.fc2(x))
         x = F.relu(self.fc3(x))
         x = self.fc4(x)
+
+        x = F.normalize(x)    # extra normalization step 
+
         x = self.fc5(x)
 
         return x
