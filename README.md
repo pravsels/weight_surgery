@@ -32,13 +32,9 @@ pip install -r requirements.txt
 5. Calculate inverse of the unitary matrix U, which reverts back to the original basis 
 
 
-## Running Tensorboard 
+## Running the main notebook 
 
-To run tensorboard: 
+Run notebook to perform weight surgery and visualize embeddings in 3D plots
 ```
-cd Tensorboard
-
-tensorboard --logdir=<folder_name>
+jupyter notebook Weight_Surgery_MNIST.ipynb
 ```
-
-Open the link generated and go to 'Projector' to visualize embeddings. 
