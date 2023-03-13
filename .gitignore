@@ -8,3 +8,5 @@ MNIST/
 Tensorboard/
 
 *.pth
+
+figs/

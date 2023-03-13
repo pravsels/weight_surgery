@@ -15,9 +15,9 @@ conda activate weight_surgery
 pip install -r requirements.txt
 ```
 
-## Running the main notebook 
+## Running the main notebooks
 
-Run notebook to perform weight surgery and visualize embeddings in 3D plots
+Run either of the main notebooks to perform weight surgery and visualize embeddings in 3D plots
 ```
-jupyter notebook Weight_Surgery_MNIST.ipynb
+jupyter notebook SC_Weight_Surgery_MNIST.ipynb
 ```
