@@ -7,6 +7,8 @@ MNIST/
 
 Tensorboard/
 
+SOCOFing/
+
 *.pth
 
 figs/
